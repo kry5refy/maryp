@@ -1,0 +1,180 @@
+body
+{
+    background-color: #202020;
+	font-family: 'Work Sans', sans-serif;
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    min-height: 600px;
+    margin-top: 50px;
+}
+
+#naglowek
+{
+    background-color: #151515;
+    border-color: gray;
+    border-style: solid;
+}
+
+#naglowek a
+{
+    text-decoration: none;
+    margin: 0;
+}
+
+#naglowek img
+{
+	float: left;
+    padding: 10px;
+}
+
+#naglowek h1
+{
+	float: left;
+    padding: 0;
+    margin: 0;
+	margin-top: 50px;
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+	width: 880px;
+}
+
+#nawigacja
+{
+	margin-top: 50px;
+    border-style: solid;
+    border-color: gray;
+    background-color: #151515;
+}
+
+#nawigacja ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#nawigacja li
+{
+    display: inline-block;
+}
+
+#nawigacja a
+{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    text-decoration: none;
+    width: 160px;
+    padding: 25px;
+    display: block;
+}
+
+#nawigacja a:hover
+{
+    transition: 1s;
+    background-color: gray;
+}
+
+#tresc
+{
+    margin-top: 50px;
+    background-color: #404040;
+    text-align: center;
+}
+
+#tresc
+{
+    margin-top: 50px;
+    background-color: #404040;
+    text-align: center;
+}
+
+#tresc li
+{
+	color: #FFFFFF;
+	text-align: left;
+}
+
+#tresc hr
+{
+	width: 70%;
+	height: 2px;
+	background-color:gray;
+}
+
+#tresc h2, p, h1
+{
+	 color: #FFFFFF;
+}
+
+#tresc p
+{
+	 text-align: left;
+	 padding: 20px;
+	 margin-left: 100px;
+	 margin-right: 100px;
+}
+
+#tresc img
+{
+    padding: 20px;
+    transition: 1s;
+}
+
+#tresc a
+{
+    text-decoration: none;
+}
+
+#tresc ul
+{
+	list-style: none;
+}
+
+#tresc a
+{
+    text-decoration: none;
+	color: #FFFFFF;
+}
+
+#tresc a:hover
+{
+	color: gray;
+}
+
+#tresc img:hover
+{
+    transform: scale(1.1);
+}
+
+.line
+{
+	width: 30%;
+}
+
+#footer
+{
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#footer a:hover
+{
+	color: gray;
+}

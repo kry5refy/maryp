@@ -1,0 +1,57 @@
+body{
+background-image: url("tlo.jpg");
+margin: 0;
+}
+li{
+float: left;
+width: 25%;
+text-align: center;
+padding: 15px 0;
+font-size:25px;
+color: white;
+}
+a{
+text-decoration: none;
+color: white;
+
+}
+
+a:hover, a:focus{
+color: black;
+}
+nav ul{
+background: grey;
+height: 50px;
+background: grey;
+height: 50px;
+box-shadow: 0px 0px 20px 2px #000;
+}
+h1{
+font-size:50px;
+text-align:center;
+color: white;
+}
+footer{
+text-align: center;
+color:white;
+}
+div{
+background-color:Grey;
+text-align: center;
+margin-left:auto;
+margin-right:auto;
+margin-top:70px;
+margin-bottom:30px;
+box-shadow: 0px 0px 20px 2px #000;
+padding-left:4px;
+padding-right:4px;
+padding-top:10px;
+color: white;
+font-family: Georgia;
+}
+p{
+font-size: 20px;
+text-align: left;
+}
+
+    

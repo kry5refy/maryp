@@ -1,0 +1,45 @@
+
+
+h3{
+    
+    font-style: italic;
+    font-style: bold;
+    text-align: center;
+    font-size: 1cm;
+}
+
+
+.tekst{
+    
+   font-style: italic;
+   font-family: 'Bellefair', sans-serif;
+   width: 400px;
+   margin: 0 auto;
+   font-size: 6mm;
+   background-color: white;
+   border-radius: 10%;
+   border-color: solid white;
+   padding: 50px;
+   box-sizing: border-box;
+   
+}
+
+.autor{
+	text-align:right;
+  font-size:5mm;
+  color:#ffffff;
+}
+
+p{
+    text-align:left;
+}
+
+  html { 
+    background: url(BG2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  

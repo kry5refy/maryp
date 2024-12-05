@@ -1,0 +1,148 @@
+div#ogol
+{
+
+}
+
+#tytul
+{
+font-size: 25pt;
+color: #146600;
+font-face: Calibri Light;
+text-align: center;
+box-shadow: 5px 5px 10px;
+}
+
+div#menu
+{
+box-shadow: 5px 5px 10px;
+text-align:center;
+background-color: #36d962;
+font-size: 15pt;
+color: black;
+font-face: Arial;
+float: left;
+}
+
+div#tekst
+{
+box-shadow: 5px 5px 10px;
+background-color: #28b568;
+padding: 30pt;
+font-size: 15pt;
+color: black;
+font-face: Calibri; 
+float: left;
+}
+
+#foto
+{
+float: left;
+}
+
+div#stopka
+{
+text-align:center;
+color: grey;
+font-size: 10pt;
+clear:both;
+}
+
+
+
+#tytul1
+{
+font-size: 25pt;
+color: #160042;
+font-face: Calibri Light;
+text-align: center;
+box-shadow: 5px 5px 10px;
+}
+
+div#menu1
+{
+box-shadow: 5px 5px 10px;
+text-align:center;
+background-color: #a87efc;
+font-size: 15pt;
+color: black;
+font-face: Arial;
+float: left;
+}
+
+div#tekst1
+{
+box-shadow: 5px 5px 10px;
+background-color: #7948db;
+padding: 30pt;
+font-size: 15pt;
+color: black;
+font-face: Calibri; 
+float: left;
+}
+
+
+
+#tytul2
+{
+font-size: 25pt;
+color: #004d4a;
+font-face: Calibri Light;
+text-align: center;
+box-shadow: 5px 5px 10px;
+}
+
+div#menu2
+{
+box-shadow: 5px 5px 10px;
+text-align:center;
+background-color: #7dfffa;
+font-size: 15pt;
+color: black;
+font-face: Arial;
+float: left;
+}
+
+div#tekst2
+{
+box-shadow: 5px 5px 10px;
+background-color: #32ada9;
+padding: 30pt;
+font-size: 15pt;
+color: black;
+font-face: Calibri; 
+float: left;
+}
+
+
+
+#tytul3
+{
+font-size: 25pt;
+color: #02450c;
+font-face: Calibri Light;
+text-align: center;
+box-shadow: 5px 5px 10px black;
+}
+
+div#menu3
+{
+box-shadow: 5px 5px 10px black;
+text-align:center;
+background-color: #59ff72;
+font-size: 15pt;
+color: black;
+font-face: Arial;
+float: left;
+}
+
+div#tekst3
+{
+box-shadow: 5px 5px 10px black;
+background-color: #16d933;
+padding: 30pt;
+font-size: 15pt;
+color: black;
+font-face: Calibri; 
+float: left;
+}
+

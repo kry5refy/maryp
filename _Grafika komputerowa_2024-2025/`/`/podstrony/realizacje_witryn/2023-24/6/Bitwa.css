@@ -1,0 +1,142 @@
+#menuToggle {
+    display: none;
+}
+
+.cross-close {
+	width: 15%;
+	height 15%;
+	font-size: 5vw;
+}
+
+.menu-link {
+    background-color: #8BA093;
+	font-size: 20px;
+    color: #585653;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+	position: fixed;
+	right: 10px;
+}	
+
+   #menu a {
+    text-decoration: none;
+    color: #585653;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	}
+	
+	#menu > ul > li > a:hover{
+		border-bottom: 1px solid #d3efdf;
+	}
+  #menu {
+    display: none;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom:0;
+    background-color: #8BA093;
+    border: 1px solid #766D62;
+    text-decoration: none;
+    padding: 50px;
+}
+#menu:target {
+    display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+    }
+#menuToggle:checked + label + #menu {
+    display: block;
+}
+
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #8BA093;
+    color: #585653;
+    padding: 10px;
+    border-radius: 50%; 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* 8BA093 menu */
+.m {
+    font-size: 35px;
+    color: #585653;
+    text-decoration: none;
+}
+
+.page {
+    background-color: #d3efdf;
+}
+
+.name {
+    font-family: 'Oswald', sans-serif;
+    width: 600px;
+    padding-left: 20px;
+    color: #362f2d;
+}
+
+.nag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    padding: 8px;
+    color: #585653;
+    padding-left: 5%;
+}
+
+.tek {
+    font-family: 'Oswald', sans-serif;
+
+    padding: 20px;
+    padding-right: 15px;
+    color: #766D62;
+    font-size: 25px;
+    flex: 1;
+}
+.tek2 {
+    font-family: 'Oswald', sans-serif;
+    
+    color: #766D62;
+    font-size: 20px;
+  
+}
+.wstep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+}
+.pdb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+}
+.b1 {
+    flex: 1;
+    text-align: right; 
+    padding: 20px;
+    padding-right: 15%;
+}
+.b2 {
+    flex: 1;
+    text-align: left; 
+    padding: 20px;
+    padding-left: 3%;
+}
+.b3 {
+    padding: 15px;
+}
+.b4 {
+    flex: 1;
+    text-align: right; 
+    padding: 20px;
+    padding-right: 7%;
+}
+ /* 766D62 tekst */ 
+/* 585653 nagłówki */

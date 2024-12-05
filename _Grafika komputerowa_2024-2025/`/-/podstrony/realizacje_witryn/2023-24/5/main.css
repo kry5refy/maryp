@@ -1,0 +1,51 @@
+body {font-family: Roboto Condensed; background-image: url('tlo_strony.jpg'); background-size: cover;}
+
+body#ballada_morska {background-image: url('Ballada_Morska.JPG'); background-size: cover;}
+
+body#legenda {background-image: url('Legenda.JPG'); background-size: cover;}
+
+body#morze_wracajace {background-image: url('Morze_Wracajace.JPG'); background-size: cover;}
+
+body#sonet_morze {background-image: url('Sonet_Morze.JPG'); background-size: cover;}
+
+#main {width: 100%;}
+
+a#source, img { transition: 0.3s ease;}
+
+#baczynski {transform: none; }
+
+img {display:block; margin: 0 auto;}
+
+iframe {display:block; margin: 0 auto;}
+
+#content {background-color: white; font-size: 20px;margin:0 25% 0 25%; text-align: justify; padding: 15px;}
+
+h2 {text-align: center;}
+
+main#poezja {color: white; font-size: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+header { text-align: center; padding: 5px 0 5px 0; }
+
+h1 {margin: 0;}
+
+nav {background-color: #7fc0da; text-align: center; padding: 10px 0 10px 0; position: sticky; top:0; width: 100%;}
+
+button {font-size: 20px; margin: 0 10px 0 10px; text-decoration: none; color: white; transition: all 0.3s ease;
+        padding: 10px 20px; border-radius: 5px; background-color: #7fc0da; border: none; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;}
+  
+button:hover {background-color: #ff4d2e; color: white; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);}
+  
+button:active{background-color: #db4329; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);}
+
+a#source, img:hover { transform: scale(1.2, 1.2); background-color: transparent; border-radius: 0; box-shadow: none;}
+
+a {font-size: 20px; margin: 0 10px 0 10px; text-decoration: none; color: white; transition: all 0.3s ease;}
+
+a:hover{cursor: pointer; background-color: #ff6347; color: white; padding: 5px 10px; border-radius: 5px; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);}
+
+a:active{background-color: #db4329;}
+
+footer {background-color: #7fc0da; text-align: center; color: #5c5c5c; padding: 5px 0 5px 0;
+        position: fixed; bottom:0; width: 100%;}

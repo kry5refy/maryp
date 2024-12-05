@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+	
+}
+
+header {
+    background: url(img/supertlo1.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+header img{
+	
+	position: absolute;
+    top: 0vh;
+    right: 5%;
+    transform: translateX(-50%);
+	
+}
+
+nav {height:50px;
+padding-top: 20px;
+margin-bottom: 20px;
+	background: black;
+	border-bottom: 2px solid #24B51F;
+    font-size: 20px;
+    color: #454751;
+    text-align: left;
+	
+	
+}
+
+.option {
+	margin-right:100px;
+	display: inline;
+    padding: 20px;
+
+	
+}
+
+a:link {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #24B51F;
+    width: 300px;
+
+}
+
+header h1 {
+	width:40%;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #0C0D0D;
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    padding: 20px;
+	-webkit-box-shadow: 0px 0px 37px 9px ; 
+box-shadow: 0px 0px 37px 9px #000000;
+}
+
+
+
+main {
+    height: 100vh;
+    background-color: #F0F0F0;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 2;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	border-top: 2px solid #24B51F;
+}
+
+
+
+
+
+/** *********************** **/
+
+h3 {font-size: 32px;
+    text-align: center;
+}
+.container h4{
+	font-size: 28px;
+	text-align: center;	
+	margin-bottom: 10px;
+}
+
+hr{
+	width: 65%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.container {
+margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+
+}
+
+.container p{
+	text-align: justify;
+	margin-top: 100px;
+	margin-left: 300px;
+	width:600px;
+	
+	padding: 5px;
+}
+.container img{
+position:absolute;
+left:65%;
+top:30%;
+}
+
+main hr{
+	margin-top: 100px;
+}
+
+
+/** *********************** **/
+
+footer {
+	margin: 0;
+	padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    z-index: 2;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+footer p {
+	margin-top: 15px;
+    text-align: center;
+    color: #F0F0F0;
+    margin-bottom: 15px;
+}
+

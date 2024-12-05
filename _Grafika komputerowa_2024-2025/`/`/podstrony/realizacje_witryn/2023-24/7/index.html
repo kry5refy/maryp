@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krzysztof Kamil Baczyński</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Krzysztof Kamil Baczyński</h1>
+  </header>
+  <nav>
+    <a id="mw"  Onclick="mw()">Morze wracające</a>
+    <a id="cm"  Onclick="cm()">Cisza morska    </a>
+    <a id="sm"  Onclick="sm()">Sonet – Morze</a>
+  </nav>
+  <div id="galeria">
+  <div class="container">
+    <div  id="tekst" class="block"></div>
+  </div>
+</div>
+  <footer id="stopka" >
+    <p>&copy; 2024 Oleksandra Nochovna</p>
+  </footer>
+  <script>
+    function mw()
+    {
+      document.getElementById("tekst").innerHTML ="<div> <h2>Morze wracające</h2><p>Pamiętasz? Było kiedyś morze<br>szkliste w falistych linii łukach,<br>morze, którego cieni można<br>w obrazach szklanych dni poszukać…<br><br>Morze czasami wzbierające<br>roznosem huku na poszumach,<br>szelestem w dali zamykanym<br>na stoodległych morskich tumach.<br><br>Morze plączące świstem deszczu<br>i perłopławiem planorodne,<br>dalekie, ciche, smutne głębią<br>jak moje oczy twoich głodne.<br><br>Morze przebite nocą w gwiazdy<br>powraca czasem cicho, jaśnie,<br>morze potęgi i miłości,<br>które w twych oczach cicho gaśnie.</p></div>";
+      document.getElementById("galeria").style.backgroundImage = 'url("01.pngindex.html style.css 02.png 03.png 01.png")';
+      document.getElementById("galeria").style.backgroundSize = 'cover'; 
+      document.getElementById("galeria").style.backgroundPosition = 'center';
+      document.getElementById("galeria").style.backgroundRepeat = 'no-repeat'; 
+    }
+    function cm()
+    {
+      document.getElementById("tekst").innerHTML ="<div><h2>Cisza morska</h2><div><p>Już wstążkę pawilonu wiatr zaledwie muśnie,<br>Cichymi gra piersiami rozjaśniona woda;<br>Jak marząca o szczęściu narzeczona młoda<br>Zbudzi się, aby westchnąć, i wnet znowu uśnie.<br><br>Żagle, na kształt chorągwi gdy wojnę skończono,<br>Drzemią na masztach nagich; okręt lekkim ruchem<br>Kołysa się, jak gdyby przykuty łańcuchem;<br>Majtek wytchnął, podróżne rozśmiało się grono.<br><br>O morze! pośród twoich wesołych żyjątek<br>Jest polip, co śpi na dnie, gdy się niebo chmurzy<br>A na ciszę długimi wywija ramiony.<br><br>Co śpi wpośród złych losów i namiętnej burzy;<br>O myśli! w twojej głębi jest hydra pamiątek,<br>A gdy serce spokojne, zatapia w nim szpony.</p><!--Źródło: http://bcpw.bg.pw.edu.pl/Content/3078/Poezja_morska_7_lutego_2011_do%20korekty%5B1%5D.pdf--></div></div>";
+      document.getElementById("galeria").style.backgroundImage = 'url("02.png")';
+      document.getElementById("galeria").style.backgroundSize = 'cover'; 
+      document.getElementById("galeria").style.backgroundPosition = 'center';
+      document.getElementById("galeria").style.backgroundRepeat = 'no-repeat'; 
+    }
+    function sm()
+    {
+      document.getElementById("tekst").innerHTML ="<div><h2>Sonet – Morze</h2><p>Noc się w morzu zatapia na ciemną żałobę –<br>kiry czernią zaleją dawności odpryski<br>odbijane nad ranem w gładzi zimno - śliskiej<br>i pochylą się ciemnią nad byłości grobem.<br><br>Porty wgryzą się światłem w półumarłą wodę,<br>rozśmieją się nocą po pustych ulicach<br>i miasto w głąb, aż do dna światła chce przemycać,<br>jak ja, obrazy szczęścia opryskane chłodem.<br><br>Morze czarne i barwne! Słoneczne i dumne!<br>załamane twe ręce horyzontów mglistych<br>w rozpaczy zamgławionej, jak w płaczu znad trumny.<br><br>Żegnaj, morze! w perłowych koronkach błękitne,<br>morze, morze kwitnące bielą w kwiatach czystych,<br>i ja tak pewno kiedyś powrotem zakwitnę…<br></p></div>";
+      document.getElementById("galeria").style.backgroundImage = 'url("03.png")';
+      document.getElementById("galeria").style.backgroundSize = 'cover'; 
+      document.getElementById("galeria").style.backgroundPosition = 'center';
+      document.getElementById("galeria").style.backgroundRepeat = 'no-repeat'; 
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Navigation */
+nav{
+    height: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #9c9688;
+    border-right: 10px solid #5d0002;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+    
+    .logo img{
+        width: 120px;
+        margin: 30px 0px 80px 0px;
+    }
+
+    .logo:before{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 75px;
+        height: 75px;
+        left: 23px;
+        top: 45px;
+        transform: rotate(45deg);
+        background-color: whitesmoke ;
+        box-shadow: 10px 10px #5d0002;
+    }
+
+    .nav-options{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        border-bottom: 5px dotted transparent;
+
+        color: #FFF;
+        font-size: 0.9em;
+        font-weight: bold;
+        cursor:pointer;
+    }
+
+    .nav-options img{
+        width: 90px;
+    }
+
+    .nav-options:hover{
+        color: #5d0002;
+        background-color: whitesmoke;
+        border-bottom: 5px dotted #5d0002;
+        box-sizing: border-box;
+    }
+
+    
+#right-bar{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}   
+
+    /* Header */
+    header{
+        margin-bottom: 25px;
+    }
+
+    header .header-content{
+        text-align: center;
+    }
+
+    header p{
+        color: #000;
+        font-weight: bold;
+        font-size: 3.5em;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    /* Main */
+    main{
+        color:#000;
+    }
+
+    article{
+        display: flex;
+        font-size: 1.2em;
+        padding-bottom: 25px;
+    }
+
+    /* article-content */
+    .article-content{
+        width: 75%;
+        padding: 2.5%;
+    }
+
+    .article-content p{
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+
+    .article-content ul{
+        text-align: left;
+        margin: 25px 0px 25px 5%;
+        border-left: 4px solid #000;
+        list-style-type: none;
+    }
+
+    .article-content li{
+        padding-left: 30px;
+    }
+
+    /* article-sidebar */
+    .article-sidebar{
+        width: 25%;
+        padding: 2.5% 2% 2% 2%;
+    }
+        .border-red{
+            border-left: 4px solid #ee304d;
+        }
+
+        .border-blue{
+            border-left: 4px solid #0286c3;
+        }
+
+        .border-green{
+            border-right: 4px solid #158c39;
+        }   
+        
+    /* poem */
+    .poem{
+        font: 0.77em 'Courgette', cursive;
+    }
+    
+    .poem p{
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .poem-title{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .poem-author{
+        font-style: italic;
+    }
+
+    .poem-chorus{
+        padding-left: 15px;
+    }
+
+    /* Lists */
+    article ol, article ul{
+        font: 0.9em 'Courgette', cursive;
+        list-style-position: inside;
+        margin: 1.5vmin;
+    }
+
+    article li{
+        margin: 1.5vmin 0 1.5vmin 0;
+    }
+
+    /* photos */
+    .photos{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+
+        font: 0.9em 'Courgette', cursive;
+        text-align: center;
+    }
+
+    .polaroid:first-child{
+        margin-bottom: 1.5vmin;
+    }
+
+    .photos img{
+        width: 10em;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        width: 100%;
+        padding-top: 1%;
+        background-color: whitesmoke;
+    }
+
+    .footer-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: end;
+
+        font: 1em 'Courgette', cursive;
+    }
+
+    .footer-content ul{
+        margin: 0 0 0.5% 1%;
+        list-style-type: none;
+    }
+    
+    .footer-content li{
+        padding-left:5px;
+
+    }
+
+    .footer-content p{
+        margin: 60px 1% 0.5% 0;
+    }

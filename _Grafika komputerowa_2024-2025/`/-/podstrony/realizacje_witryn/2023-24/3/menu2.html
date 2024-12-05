@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>   
+	<title>Dzieła malarskie</title>
+	<meta charset="UTF-8">
+	<style>
+	body {
+		background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(tlo.jpg);
+	}
+	div.blok {
+		background-color: white;
+		width: 80%;
+		margin: auto;
+		padding: 25px;
+	}
+		.content:has(p,h2)
+	{
+		color:white;
+		text-align:center;
+	}
+	div.img {
+			background-color: white;
+		width: 70%;
+		padding:10px;
+		margin:auto;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		color:black;
+		
+	}
+	ul li{
+		display: inline-block;
+		font-size: 20px;
+	}
+	nav{
+		text-align: center;
+	}
+	p {
+		font-family: Arial;
+		text-align: justify;
+	}
+	h1 {
+		background-color: lightgray;
+		font-family: Tahoma;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding: 25px;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		width: 250px;
+		padding: 5px;
+		text-align: center;
+		color: black;
+	}
+	li{
+		padding: 20px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		background-color: white;
+		border: 1px solid grey;
+		transition:1s;
+	}
+	li:hover {
+	background-color: lightgray;
+	border: 2px solid black;
+	font-size: 25px;
+	}
+	img
+	{
+		width:500px;
+		padding:1rem;
+		transition:1s;
+	}
+	.sekcja
+	{
+		display:flex;
+		align-items:center;
+	}
+	img:hover
+	{
+		scale:1.1;
+	}
+	</style>
+</head>
+<body>
+	<!--  Treść strony -->
+	<a id="poczatek">Początek strony 2</a>
+	<br>
+	
+	<h1>Dzieła malarskie</h1>
+	<nav>
+		<ul>
+			<li><a href="index1.html">Jan Matejko</a></li>
+			<li><a href="menu2.html">Dzieła malarskie</a></li>
+			<li><a href="menu3.html">Życiorys</a></li>
+		</ul>
+	</nav>
+	
+	</div>	
+	<section class="content">
+		<h2>Co wyróżniało jego malarstwo?</h2>
+		<p>Malarstwo Matejki, umiejscawiane wśród czołowych dzieł epoki dziewiętnastowiecznego historyzmu, charakteryzowały precyzja konturu, dbałość o szczegóły oraz starannie wygładzona powierzchnia malarska.</p>
+			<div class="img">
+		<img src="gurnwald.jpg" alt="Obraz przykładowy" height="300px">
+		
+		<img src="unialubelska.jpg" alt="Obraz przykładowy"  height="300px">
+		<p>Bitwa pod Grunwaldem - 1872 roku Obraz olejny</p>
+		<p>Unia lubelska - 1869 roku Obraz olejny</p>
+		
+		
+		<img src="kopernik.jpg" alt="Obraz przykładowy"  height="300px">
+		
+		<img src="konstytucja.jpg" alt="Obraz przykładowy"  height="300px">
+		<p>Astronom Kopernik, czyli rozmowa z Bogiem - 1871 roku Obraz olejny</p>	
+		<p>Konstytucja 3 maja - 1891 roku Obraz olejny</p>
+			
+	</div>
+	</section>
+	<br>
+</body>
+	
+<!-- Igor Pędziwilk / Kacper Zagłoba 2P -->
+</html>

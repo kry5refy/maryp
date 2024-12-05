@@ -1,0 +1,182 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+<style>
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+	.main
+	{
+		color:white;
+		height:100%;
+		background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(tlo.jpg);
+		background-repeat: no-repeat;
+	}
+	.nav ul
+	{
+		display: flex;
+		list-style-type: none;
+		margin: 0.5rem;
+	}
+	.nav ul li
+	{
+		padding-inline: 1rem;
+	}
+	.nav ul li a
+	{
+		color:white;
+		text-decoration: none;
+		transition: 1s;
+	}
+	.nav ul li a:after
+	{
+		content: '';
+		width:0%;
+		height: 2px;
+		background-color:orangered;
+		display: block;
+		transition: 1s;
+		margin: auto;
+	}
+	.nav ul li a:hover::after
+	{
+		width:100%;
+	}
+	.header
+	{
+		display:flex;
+		justify-content: space-between;
+		margin: 1rem;
+	}
+	.blok
+	{
+		border-bottom: 1px solid black;
+		margin:5rem;
+	}
+	.blok:last-child
+	{
+		border: none;
+	}
+	h2
+	{
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.akapit:first-letter
+	{
+		font-size:2rem;
+	}
+	p,h4,h2
+	{
+		letter-spacing:0.5px;
+		margin:1rem;
+	}
+	img
+	{
+		margin:1rem;
+	}
+	.galeria
+	{
+		display:grid;
+		grid-template-columns:repeat(3,1fr);
+		border-bottom: 1px solid black;
+		background-color: rgb(230, 227, 227);
+	}
+	.obrazek
+	{
+		display:grid;
+		justify-content:center;
+		text-align:center;
+		font-size:1.5rem;
+		margin:3rem;
+	}
+	.obrazek img
+	{
+		height:300px;
+		transition:1s;
+	}
+	.obrazek img:hover
+	{
+		scale:1.1;
+	}
+	.babka
+	{
+		font-size:2rem;
+		position:relative;
+		top:700px;
+		animation: toup 1.5s forwards;
+		opacity:0;
+	}
+	@keyframes toup
+	{
+		100%{top:500px;opacity:1;}
+	}
+</style>
+</head>
+<body>
+	<!--  Treść strony -->
+	<main class="main">
+		<header class="header">
+		<p class='babka'>Tadeusz Kościuszko - Bohater Polski i Ameryki</p>
+			<nav class="nav">
+				<ul>
+					<li><a href="#postac">O Kościuszce</a></li>
+					<li><a href="#pochodzenie">Pochodzenie</a></li>
+					<li><a href="#edukacja">Wykształcenie</a></li>
+					<li><a href="#powstanie">O Powstaniu Kościuszkowym</a></li>
+				</ul>
+			</nav>
+		</header>
+	</main>	
+	
+	<div id='postac' class="blok">
+		<h2>Kim był Tadeusz Kościuszko</h2>
+		<p class='akapit'>Andrzej Tadeusz Bonawentura Kościuszko --> inżynier wojskowy, Najwyższy Naczelnik Siły Zbrojnej Narodowej w czasie insurekcji 
+			kościuszkowskiej, generał lejtnant wojska Rzeczypospolitej Obojga Narodów, generał major komenderujący w Dywizji Wielkopolskiej 
+			w 1792 roku, brevet generał brygady Armii Kontynentalnej w czasie wojny o niepodległość Stanów Zjednoczonych.<br><br>
+			<h4>Zdobył odznaczenia takie jak:</h4>
+			<p class='akapit'>- Złoty medal Virtuti Militari, 1792 r. Kościuszko był pierwszą osobą odznaczoną tym odznaczeniem. Później zastąpił medal krzyżem kawalerskim VM. <br>
+			- Order Cyncynata otrzymał 5 maja 1784 r. z rąk Waszyngtona w Filadelfii <br>
+			- Jedna z planetoid odkryta przez amerykańskiego astronoma Edwarda Bowella, nazwana została (90698) Kosciuszko <br>
+			W 1792 roku Stanisław August Poniatowski chciał nadać Kościuszce Order Orła Białego. Ten jednak, jako republikanin z przekonania, miał odmówić jego przyjęcia<br><br>
+		
+			Tadeusz Kościuszko jest uznawany za bohatera narodowego Polski, Stanów Zjednoczonych Ameryki</p><br>
+	</div>
+	<div class='galeria' class="blok">
+	
+		<div class='obrazek'><img src='herb.png'><p>Herb Tadeusza Kościuszki</p></div>
+		<div class='obrazek'><img src='2.jfif'><p>Tadeusz Kościuszko pod Racławicami - Jan Matejko</p></div>
+		<div class='obrazek'><img src='sosnowica.jpg'><p>Dom rodzinny Tadeusza Kościuszki</p></div>
+	
+	</div>
+	<div id='pochodzenie' class="blok">
+		<h2>Pochodzenie Tadeusza Kościuszki</h2>	
+		<p class='akapit'> Tadeusz Kościuszko urodził się 4 lutego 1746 roku w Mereczowszczyźnie na Polesiu jako czwarte dziecko miecznika brzeskiego Ludwika Tadeusza, pułkownika regimentu buławy polnej litewskiej i Tekli Kościuszko, z domu Ratomskiej. Ród Kościuszków wywodził się od Konstantego Fiodorowicza, nazywanego zdrobniale „Kostiuszką” (białor. „Касцюшка”, st.rus. i ukr. „Костюшко”), będącego dworzaninem wielkoksiążęcym Aleksandra Jagiellończyka i Zygmunta I. Imię to stało się po latach nazwiskiem rodowym. Zygmunt I Stary jako wielki książę litewski w 1509 roku w spisanym w języku ruskim przywileju nadał Konstantemu na własność majątek Siechnowicze. Miejsce to stało się gniazdem rodowym Kościuszków. Z czasem ród uległ polonizacji. Wychowywał się w rodzinie katolickiej, jednak w późniejszym życiu stał się zdeklarowanym deistą.</p>	
+		<br><br></div>
+	
+		<div id='edukacja' class="blok">
+			<h2>Tadeusz Kościuszko w Warszawskiej Szkole Rycerskiej</h2>	
+			<p class='akapit'>Był wyróżniającym się kadetem, w związku z czym uczęszczał dodatkowo na kurs inżynierski. Po ukończeniu szkolenia pozostał w placówce w roli instruktora. W 1769 roku wyjechał jako stypendysta królewski do Francji, by dalej kształcić się w dziedzinie wojskowości. Uczył się tam również malarstwa. Po powrocie do Polski w 1774 roku został instruktorem Szkoły Rycerskiej. Pięcioletni pobyt w przedrewolucyjnej, oświeceniowej Francji wywarł poważny wpływ na jego przekonania polityczne i społeczne. Nie znalazł jednak zatrudnienia w polskim wojsku, w związku z czym postanowił poszukać zajęcia zagranicą. Dowiedziawszy się o wojnie w Ameryce (wojna o niepodległość USA), wyruszył za ocean. Na miejscu zaangażowano go do fortyfikowania obozów wojskowych, co przyniosło mu spory rozgłos (zbudował między innymi twierdzę West Point). Kongres uznał go za bohatera, awansował na generała oraz nagrodził go nadaniem gruntu a także pewną znaczną sumą pieniędzy.
+	
+				W 1784 roku Kościuszko wrócił do Polski. W 1788 szlachta na Sejmie Wielkim zabiera się za ostre reformowanie państwa, częściowo nawet wbrew królowi. Kościuszko w 1789 dostaje wreszcie upragnioną nominację na generała wojsk koronnych. Wziął udział w wojnie polsko-rosyjskiej 1792 roku, po której awansowany został na generała lejtnanta. Po przystąpieniu Stanisława Augusta Poniatowskiego do konfederacji targowickiej udał się na emigrację. Zaangażował się w przygotowania do zbrojnego powstania.</p>	
+			<br><br>
+		</div>
+		<div id='powstanie' class="blok">
+			<img style="float:left;" src="kos.png"><h2>Insekuracja Kościuszkowska</h2>	
+			<p class='akapit'>W 1794 roku złożył narodowi uroczystą przysięgę, stając na czele insurekcji, zwanej od jego nazwiska kościuszkowską. W czasie powstania wydał uniwersał połaniecki, zapewniający wolność osobistą chłopom. Kościuszko został ranny w bitwie pod Maciejowicami i dostał się do niewoli rosyjskiej. Niedługo później insurekcja upadła, wojsko polskie zostało rozbite. Po wyjściu w niewoli udał się w podróż, najpierw po Europie, a później do Stanów Zjednoczonych. Po powrocie do Europy w latach 1798–1815 mieszkał pod Paryżem, brał wtedy m.in. udział w tworzeniu Legionów Polskich oraz w zakładaniu Towarzystwa Republikanów Polskich. Był sceptycznie nastawiony do Napoleona i Księstwa Warszawskiego. W 1815 r. odmówił wsparcia dla powstania uzależnionego od Rosji Królestwa Polskiego.
+
+				Zmarł 15 października 1817 r. w Solurze w Szwajcarii. Tadeusz Kościuszko uznawany jest za bohatera dwóch narodów. Zarówno w Polsce, jak i Stanach Zjednoczonych nie brakuje pomników i miejsc mu poświęconych, jego imię nosi też Akademia Wojskowa w West Point, również na jego pamiątkę nazwano najwyższy szczyt Australii. </p>	
+			</img><br><br><br><br><br><br><br><br>
+			<p style="text-align: center; color: grey;">Autorzy: Stanisław Bogdan, Bartosz Bobrowski, Hubert Barkowski 2P</p>
+		</div>
+	
+
+<!-- Stanisław Bogdan /  Bartosz Bobrowski / Hubert Barkowski 2P -->
+
+</body>
+</html>

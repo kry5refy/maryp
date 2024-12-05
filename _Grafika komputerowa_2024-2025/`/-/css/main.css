@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); 
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+header, main, nav, article, aside {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  --nav-height: 10rem;
+  --footer-height: 5rem;
+  --font-black: rgba(0, 0, 0, .8);
+  --font-white: rgba(255, 255, 255, .9);
+}
+
+body {
+  overflow-x: hidden;
+	margin: 0 auto;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 2rem;
+}
+
+
+/*====={| Nawigacja i blur |}=====*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4f9e42;
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  overflow: hidden;
+  box-shadow: 0 .6rem .6rem rgba(0, 0, 0, .2);
+}
+
+nav::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+
+/*====={| Main - środek |}=====*/
+
+main {
+  width: 100%;
+  height: auto;
+  margin-top: var(--nav-height);
+  min-height: calc(100% - var(--nav-height) - var(--footer-height));
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: start;
+  justify-items: center;
+}
+
+/*====={| Stopka i blur |}=====*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--footer-height);
+  background-color: #8cc43f;
+  color: white;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  width: inherit;
+  height: inherit;
+  filter: blur(1rem);
+  background: inherit;
+}
+
+
+/*====={| Content w nawigacji |}=====*/
+
+/* nazwa szkoły */
+nav .logo {
+  font-size: 3.2rem;
+  color: white;
+  letter-spacing: .025rem;
+  white-space: nowrap;
+  margin: 0 2rem;
+}
+
+/* lista z menu */
+.nav-links {
+  position: fixed;
+  z-index: 30;
+  margin: 0;
+  padding: 0;
+  right: -40rem;
+  height: calc(100% - var(--nav-height));
+  top: var(--nav-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 40rem;
+  transition: transform .5s ease-out;
+  background-color: rgba(255, 255, 255, .3);
+  box-shadow: inset 0 .6rem .6rem rgba(0, 0, 0, .2);
+  text-align: center;
+}
+
+.nav-links li {
+  list-style-type: none;
+  margin: 0;
+  opacity: 0;
+  font-size: 3rem;
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(to right, transparent 10%, var(--font-white) 90%);
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--font-black);
+  transition: text-shadow, color .2s ease-out;
+}
+
+.nav-links a:hover {
+  color: #4046bfff;
+}
+
+.nav-links a::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 .5rem;
+  transform: translateX(100%);
+  transition: transform .2s ease-out;
+}
+
+.nav-links a:hover::before {
+  transform: translateX(0);
+}
+
+/* menu burgerowe 
+ * dla widoku mobilnego
+ */
+nav .burger {
+  display: block;
+  cursor: pointer;
+}
+
+nav .burger div {
+  width: 2.5rem;
+  height: .4rem;
+  background-color: var(--font-white);
+  margin: .5rem;
+  border-radius: 1rem;
+  transition: all .3s ease;
+}
+
+/* płynne wejście
+ * menu w widoku
+ * mobilnym
+ */
+.nav-active {
+  transform: translateX(-100%);
+}
+
+/* płynne, dynamiczne
+ * wejście oddzielnych
+ * pozycji w menu
+ */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  } to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* górna linia burgera */
+.chg-bur .line1 {
+  transform: rotate(45deg) translate(1.36rem, -.6rem);
+  width: 40%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* środkowa linia burgera */
+.chg-bur .line2 {
+  transform: translateX(-.3rem);
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* dolna linia burgera */
+.chg-bur .line3 {
+  transform: rotate(-45deg) translate(1.36rem, .6rem);
+  width: 40%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+
+/*====={| Content w main |}=====*/
+
+/* główny napis */
+main h1 {
+  display: block;
+  text-align: center;
+  margin: 6rem;
+  font-weight: normal;
+  letter-spacing: .15rem;
+  font-size: 6rem;
+}
+
+/* zawartość poniżej
+ * napisu
+ */
+main .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  background-color: #4f9e42;
+  width: 100%;
+  padding: 0 8% 10rem 8%;
+  justify-items: center;
+  text-align: center;
+}
+
+/* oddzielne elementy 
+ * do klikania
+ */
+main .content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 0;
+}
+
+/* koła elementów
+ * do klikania
+ */
+main .content figure .fig-button {
+  width: 20rem;
+  height: 20rem;
+  background-color: inherit;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: .6rem .6rem .6rem rgba(0, 0, 0, .2);
+  border-radius: 50%;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+/* blur */
+main .content figure .fig-button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  width: inherit;
+  height: inherit;
+  box-shadow: inset 0 0 200rem rgba(255, 255, 255, .6);
+  filter: blur(1rem);
+  background: inherit;
+}
+
+/* svg */
+main .content figure .fig-button a img {
+  display: block;
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .8;
+  transition: opacity .3s ease;
+}
+
+/* hover dla svg */
+main .content figure .fig-button:hover > a img {
+  opacity: 1;
+}
+
+main .content figure .fig-button:hover {
+  transform: translateY(-1rem);
+}
+
+/* napis pod elementami */
+main .content figure figcaption {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 2.4rem;
+  color: white;
+  border-bottom: .5rem solid transparent;
+  border-radius: 0 0 .5rem .5rem;
+  transition: border .3s ease;
+}
+
+main .content figure .fig-button:hover + figcaption {
+  border-color: #4046bfff; 
+}
+
+@media only screen and (max-width: 568px) {
+  nav .logo {
+    font-size: 1.6rem;
+    letter-spacing: .02rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    --nav-height: 6rem;
+  }
+
+  nav .logo {
+    font-size: 2.2rem;
+    color: white;
+    letter-spacing: .025rem;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  main h1 {
+    margin: 4rem;
+    font-size: 4.5rem;
+  }
+}

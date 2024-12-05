@@ -1,0 +1,132 @@
+html, body{
+    margin: 0;
+    background: url('img/bg.png') no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #00f5a9;
+    padding: 10px;
+    box-sizing: border-box;
+}
+header #logo{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 20px;
+}
+header h1{
+    margin-top: -4px;
+    margin-bottom: 0;
+    margin-left: 150px;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    color: #474747;
+	letter-spacing: 3px;
+}
+h2{
+    font-family: 'Righteous', cursive;
+    color: #474747;
+    text-transform: uppercase;
+    margin-left: 10px;
+	letter-spacing: 3px;
+}
+h3{
+    font-family: 'Righteous', cursive;
+    color: #474747;
+    text-transform: uppercase;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-size: 26px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+nav{
+    clear: both;
+    margin-top: -16px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align:center;
+}
+
+li {
+    border-right: 1px solid #00f5a9;
+    display:inline;
+}
+li:first-child{
+    border-left: 1px solid #00f5a9;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:inline-block;
+}
+
+li a:hover {
+    background-color: #444;
+    color: black;
+}
+main{
+    width: 900px;
+    height: auto;
+}
+section{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+article{
+    width: 700px;
+    border-bottom: 1px dashed #222;
+    padding: 15px 0;
+}
+section{
+    color: #474747;
+    font-size: 20px;
+}
+article p::first-letter{
+    font-size: 32px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    background: #333;
+    color: white;
+}
+p{
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+footer p{
+    font-size: 16px;
+    color: white;
+    margin-left: 50px;
+}
+.author{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.author a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #5c5c5c;
+    
+}
+.active{
+    background-color: #444;
+    color: #DDD;
+}

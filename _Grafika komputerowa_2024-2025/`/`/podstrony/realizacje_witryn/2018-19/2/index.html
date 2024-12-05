@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Ćwiczenie 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="tworcy.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">O nas</a>
+    </div>
+  </div>
+
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Wiersze</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 2/index.html"> Krzysztof Kamil Baczyński "Morze wracające"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 3/index.html">Antoni Słonimski "Gwiazdy"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 4/index.html">Kazimierz Przerwa-Tetmajer "Znad morza"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 5/index.html">Aleksander Cwalina "Tam gdzie
+      Kaszubów bohaterskie plemię"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 6/index.html">Józef Ignacy Kraszewski
+      "Bałtyk"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 7/index.html">kpt Adam Kowalski
+      "Morze,nasze, morze"</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="./Wiersze/Wiersz 8/index.html">Kpt. Mariusz Zaruski "Z podań
+      żeglarskich"</a>
+  </nav>
+
+
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Poezja marynistyczna</h1>
+        <p>Charakteryzowała go efektowna forma utworu, nadużywanie metafor oraz różnorodne chwyty stylistyczne, takie
+          jak: aliteracje, anafory, paradoksy, inwersje, parentezy, hiperbole i tym podobne, by osiągnąć pożądany efekt.
+          Nazwa pochodzi od nazwiska twórcy - Giambattisty Marino.</p>
+
+        <p>
+          Główne założenie tej poezji brzmi: "zaskoczyć, zaszokować odbiorcę niezwykłym pomysłem w dziedzinie tematu lub
+          formy". Na tej bazie w Hiszpanii i we Włoszech powstał nurt nazywany konceptyzmem, który dążył do budowania
+          wypowiedzi poetyckiej na wyszukanym pomyśle. W zakresie formy stosowano dużą liczbę środków stylistycznych
+          (często błahą treść ubierano w wyszukaną formę przesyconą anaforami, antytezami, hiperbolami, paradoksami). W
+          Polsce reprezentowany był głównie przez Jana Andrzeja Morsztyna. Jego naśladowcy, popisujący się niezwykłymi
+          pomysłami osiągali prawdziwą wirtuozerię formy poetyckiej; mariniści, tak jak ich mistrz, pisywali zwykle
+          utwory erotyczne. W baroku, bardzo łatwo mieszano doświadczenia religijne i miłosne; ten sam zabieg
+          dostrzegamy u poetów dwudziestolecia, a przede wszystkim u Bolesława Leśmiana, u którego gwałtowność erotyzmu
+          miesza się z nieograniczoną dobrocią Boga (np. ballada STRÓJ).</p>
+
+        <ul id="slides">
+          <li class="slide showing"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+
+        </ul>
+        <button class="controls" id="previous">Previous</button>
+        <button class="controls" id="next">Next</button>
+
+      </div>
+    </div>
+
+
+
+    
+
+    <footer id="myFooter">
+
+      <div class="w3-container w3-theme-l2 w3-padding-32 ">
+        <div class="flexyboi">
+          <div class="d1">
+            <h4>Źródła:</h4>
+            http://bcpw.bg.pw.edu.pl/Content/3078/Poezja_morska_7_lutego_2011_do%20korekty%5B1%5D.pdf<br>
+            Autor zjęć: Marzena Parówińska
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-theme-l1">
+        <p style="text-align:center;">Autor: Mateusz Wiwatowski & Marek Duszyński &copy;</p>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script>
+    var mySidebar = document.getElementById("mySidebar");
+
+
+    var overlayBg = document.getElementById("myOverlay");
+
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+  <script>
+    var slides = document.querySelectorAll('#slides .slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 2000);
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function previousSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function goToSlide(n) {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].className = 'slide showing';
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML>
+<html> 
+<head> 
+
+	<script>
+		prompt("Witaj na podstronie! Podaj szyfr!");
+		
+		function data(){
+
+const dzis = new Date();
+
+const rok=dzis.getFullYear();
+
+const m=dzis.getMonth(); //od 0 do 11
+const miesiace=["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
+const miesiac=miesiace[m];
+
+const d=dzis.getDay();
+const dni=["niedziela","poniedziałek","wtorek","środa","czwartek","piątek","sobota"];
+const dzien=dni[d];
+
+const n=dzis.getDate();
+
+
+const godzina=dzis.getHours();
+const minuta=dzis.getMinutes();
+const sekunda=dzis.getSeconds();
+
+
+wynik.innerHTML="Dziś jest "+n+" "+miesiac+" "+rok+" "+dzien+" godzina:"+godzina+":"+minuta+":"+sekunda+"";
+
+const koniec = new Date(2023,12,31,9,0,0);
+
+const roznica=Math.abs(koniec.getTime()-dzis.getTime()); //wartosc w milisekundach
+
+const zakonczenie=Math.floor(roznica/(1000*60*60*24));
+
+const zakonczenieg=Math.floor(roznica/(1000*60*60)%24);
+
+const zakonczeniem=Math.floor(roznica/(1000*60)%60);
+
+const zakonczenies=Math.floor(roznica/(1000)%60);
+
+wakacje.innerHTML="Kolejna rocznica będzie za: "+zakonczenie+" dni, "+zakonczenieg+" godzin, "+zakonczeniem+" minut i "+zakonczenies+" sekundy";
+
+}
+
+setInterval(data,1000);
+
+		
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Szymon i Pior Markowscy">
+	<meta name="keywords" content="1P, 02.06.2022">
+	<title>ZADANIE</title>
+	<style>
+	
+	 ul a:link, ul a:visited {
+	 
+     display: block; 
+     width: 160px; 
+	 height: 42%;
+     text-decoration: none; 
+     background-color: gray; 
+     color: black;
+     padding: 11px; 
+     border: 3px outset gray;
+	 font-family: OCR A Std, monospace;
+	 font-size: 16.5px;
+	 float: left;
+     }
+
+     ul a:hover {
+	 
+     border-style: inset; 
+     color: black; 
+     padding: 8px 8px;
+
+     }
+	 
+	 ul, li {
+     display: block; 
+     list-style: none; 
+     } 
+	
+	#container{
+		width:80%;
+		height:80%;
+		background-color:silver;
+		margin: auto;
+		}
+	#logo{
+		width:100%;
+		height:15%;
+		background-color:gray;	
+		font-family: OCR A Std, monospace;
+		color: #333333;
+		font-size: 0.9cm;
+		letter-spacing: 3px;
+		}
+
+	#content{
+		width:80%;
+		height:700px;
+		float:left;
+        font-family: OCR A Std, monospace;
+		font-size: 24px;
+		background-image: url(https://th.bing.com/th/id/R.f5310cc9fe673f5d4f589874d99512f1?rik=dMSQKvi%2fjZKrlg&pid=ImgRaw&r=0);
+		
+		}
+	#ad{
+		width:20%;
+		height:80%;
+		background-color:silver;
+		float:left;
+		font-family: OCR A Std, monospace;
+		font-size: 21.69px;
+		}
+	#footer{
+		width:100%;
+		height:15%;
+		background-color:gray;
+		clear: both;
+		padding: 1px;
+		font-family:OCR A Std, monospace;
+		}	
+	#tlo {
+	
+	background-color: silver;
+	width: 80%;
+	height: 90%;
+	float:center;
+    margin: auto;
+	text-align: left;
+	font-size: 21.5;
+	margin-top: 25px;
+	padding: 15px;
+	}
+	
+</style>
+</style>
+</head>
+<body>
+	<div id="container"> 
+	
+		<div id="logo"> <h1 align="center" color="black"> Kto złamał „Enigmę” ? </h1> </div>
+		
+		<div id="content"> <div id="tlo" align="center" style="font-size:20px; text-align:justify;"> <p>
+		<table border="0">
+
+  <tr>
+  <td width="33%">
+ <fieldset text-align="top">
+ <legend></legend>
+<img src="https://th.bing.com/th/id/OIP.5cRzaBQY2VSvpfGIU1_HGQHaJV?pid=ImgDet&rs=1" width="90%" height="350px"><br><br>
+Marian Rejewski odczytał pierwsze informacje, które były przesyłane za pośrednictwem niemieckiej maszyny szyfrującej „Enigma”.
+  </fieldset>
+</td>
+
+
+  <td width="33%">
+  
+ <fieldset>
+ <legend></legend><br>
+<img src="https://media2.nekropole.info/2013/11/Jerzy-Rozycki.jpg" width="90%" height="350px"><br><br>
+Jerzy Różycki – matematyk, kryptolog pracownik radiokontrwywiadu wojskowego z kraju - polska (Biuro Szyfrów Referat 4) Oddziału II Sztabu Głównego WP.
+  </fieldset>
+  
+</td>
+
+
+<td width="33%">
+
+ <fieldset>
+ <legend></legend><br>
+<img src="https://th.bing.com/th/id/R.8af0694f1ab657056a25c621011ae768?rik=2JpWnI%2fmPClTmw&pid=ImgRaw&r=0" width="90%" height="350px"><br><br>
+Henryk Zygalski – polski matematyk i kryptolog, wynalazca koncepcji płacht Zygalskiego, dzięki którym on oraz Marian Rejewski i Jerzy Różycki złamali kod Enigmy.
+  </fieldset>
+
+  
+</td>	
+
+  </tr>
+
+		</table>
+
+		</div>
+		</p> </font> </div>
+		<div id="ad"> 
+
+
+
+				<ul>
+				<li> <a href="https://pl.wikipedia.org/wiki/Enigma"> Enigma </a>
+				<li> <a href="index.html"> Strona głowna </a>
+				</ul>
+				<br>				<br>				<br>				<br>
+
+				
+						<hr align="center" color="gray" width="80%">
+						<fieldset width="100px" border="1">
+						
+						<legend>Maszyna enigma</legend>
+				
+				<img src="enigma.png" alt="Marian Rejewski" width="100%">
+
+				<hr align="center" color="gray" width="80%">
+				<ul>
+<li><b><p id="wynik" style="font-size: 17px;"></p></b>
+<li><b><p id="wakacje" style="font-size: 17px;"></p></b>
+	</ul>
+
+			</fieldset> 
+			</div>
+			
+		<div id="footer"> <p>
+				Żródła: <a href="http://zse.gda.pl/~maryp/_Grafika%20komputerowa_2022-2023/Tematy%20do%20zadan-GK%202022.pdf"> ZSE</a> Autorzy: Szymon i Piotr Markowscy 16.05.2023
+			</p> </div>
+	</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,115 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+.w3-top{
+    z-index: 2000;
+}
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+.flexyboi{
+    display:flex;
+}
+.d1{
+    width:30%;
+}
+
+.d2{
+    width:30%;
+}
+.d3{
+    width:30%;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background-image:url(Background.jpg);
+    background-color: #cccccc;
+    height:-webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.slide:nth-of-type(2) {
+    background-image:url(BG1.jpg);
+    background-color: #cccccc;
+    height:-webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slide:nth-of-type(3) {
+    background-image: url(BG2.jpg);
+    background-color: #cccccc;
+    height:-webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.slide:nth-of-type(4) {
+    background-image: url(BG3.jpg);
+    background-color: #cccccc;
+    height:-webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.slide:nth-of-type(5) {
+    background-image: url(BG4.jpg);
+    background-color: #cccccc;
+    height:-webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#slides {
+    position: relative;
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}

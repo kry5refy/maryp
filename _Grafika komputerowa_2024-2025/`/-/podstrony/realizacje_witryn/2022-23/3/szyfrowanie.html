@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Szyfrowanie</title>
+    <style>
+      /* Resetowanie stylów domyślnych przeglądarki */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Ustawienie tła strony */
+      body {
+        background-color: #b4fac9;
+       font-family: Verdana, sans-serif;
+		text-shadow: 0 0 10px black;
+      }
+      /* Ustawienie nagłówka strony */
+      header {
+        background-color: #36782e;
+        color: #6bdb5c;
+        margin-right: 20px;
+        padding: 20px;
+        text-align: right;
+        display: flex;
+        align-items: center;
+      }
+	  
+	  h1{
+	  text-shadow: 0 0 10px green;
+	  }
+      
+      /* Ustawienie nawigacji strony */
+      nav {
+        background-color: #499140;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding-right: 600px;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      /* Ustawienie treści strony */
+      main {
+        display: flex;
+        flex-wrap: wrap;
+		justify-content: center;
+        padding: 20px;
+        padding-right: 600px;
+        overflow-y: scroll;
+        max-height: calc(100vh - 200px);
+      }
+      .container {
+  overflow: hidden; /* create a new block formatting context to contain floated elements */
+}
+      article {
+       background-color: #409176;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width:550px;
+        padding: 30px;
+
+        text-align: left;
+      }
+      
+      
+      article h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      article p {
+        font-size: 20px;
+        color:#ffffff;
+        font-weight: lighter;
+      }
+	  
+	        .foto {
+        width:370px;
+      }
+      h3{
+        font-size: 20px;
+        color:#ffffff;
+        font-weight: lighter;
+      }
+      
+      
+      /* Ustawienie stopki strony */
+      footer {
+        background-color: #36782e;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .sidebar {
+        background-color: #36782e;
+        color: #fff;
+        height: 100%;
+        position: fixed;
+        top: 0;
+		margin-left:10px;
+		margin-bottom:10px;
+        right: 0;
+        width: 200px;
+		padding-top: 50px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        margin: 20px 0 0 0;
+        padding: 20px;
+      }
+      .sidebar li {
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+      }
+      .sidebar a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .sidebar a:hover {
+        background-color: #55c9a3;
+      }
+	  
+	  	  #zegarek{
+	  text-align: center;
+	  font-size: 30px;
+	  }
+	  
+	  	  h2{
+	  text-shadow: 0 0 10px gold;
+	  }
+      /* Ustawienie treści strony */
+      
+
+      footer {
+        background-color: #36782e;
+        color: #fff;
+        padding: 2px;
+        position: absolute;
+        bottom: 0;
+		width:2000px;
+        text-align: center;
+      }
+      
+
+
+
+    </style>
+				<script>
+		function zegar() {
+		  var data = new Date();
+		  var godzina = data.getHours();
+		  var min = data.getMinutes();
+		  var sek = data.getSeconds();
+		  var terazjest = ""+godzina+
+		  ((min<10)?":0":":")+min+
+		  ((sek<10)?":0":":")+sek;
+		  document.getElementById("zegarek").innerHTML = terazjest;
+		  setTimeout("zegar()", 1000);
+		}
+		zegar();
+		</script>
+  </head>
+  <body onload="zegar()">
+    <header>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h1>Szyfrowanie i deszyfrowanie w Enigmie</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<img src="logo.png" width="50px" height="50px"> </p> 
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona główna&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="historia.html">Kryptografia&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="szyfrowanie.html">Szyfrowanie&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="zlamanie.html">Złamanie Szyfru&nbsp;&nbsp;&nbsp;</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h3>Szyfrowanie i deszyfrowanie w Enigmie</h3>
+        <p>Enigma była urządzeniem elektromechanicznym służącym do szyfrowania i deszyfrowania wiadomości. Składała się z klawiatury, lampki sygnalizującej, wirnika oraz tarczy z literami. Wszystkie te elementy były połączone ze sobą w specyficzny sposób, który określał ustawienie szyfru.</p>
+        <p>W Enigmie istniało wiele możliwych ustawień, a każde z nich odpowiadało innemu szyfrowaniu. Niemieccy operatorzy zmieniali ustawienia szyfru codziennie, a nawet kilka razy dziennie, co utrudniało pracę kryptologów.</p>
+        <p>Szyfrowanie wiadomości w Enigmie odbywało się w następujący sposób:</p>
+      </br>
+    </br>
+          <p>1.Operator wpisywał tekst wiadomości na klawiaturze.</br>
+          2.Wynik wprowadzenia klawiatury był przesyłany na wirnik, który modyfikował znaki.</br>
+          3.Zmodyfikowany znak był przekazywany na kolejny wirnik, który ponownie modyfikował znak.</br>
+          4.Proces ten powtarzał się dla każdego wirnika, a następnie przekazywany był na tarczę z literami.</br>
+          5.Ostatecznie, znak na tarczy był zamieniany na inny znak.</br>
+          6.Zakodowana wiadomość była przesyłana do odbiorcy.</br></p>
+          </br>
+        </br>
+        <p>Deszyfrowanie wiadomości działało w ten sam sposób, ale w odwrotnej kolejności. Odbiorca wprowadzał otrzymaną wiadomość na klawiaturę, a Enigma deszyfrowała ją, przetwarzając ją w odwrotnym kierunku.</p>
+ 
+
+      </article>
+
+      
+                <article class="foto">
+        <img src="Lamanie.png" width="350" height="400">
+        <p><font size="3">Schemat łamania szyfru</font></p>
+      </article>
+      
+     
+  
+            <div class="sidebar">
+			<h2><div id="zegarek"></div></h2>
+			<ul>
+			<li><a href="https://pl.wikipedia.org/wiki/Enigma" target="_blank">Wikipedia</a></li>
+			<li><a href="https://eduinf.waw.pl/inf/hist/006_col/0001.php" target="_blank">Szyfrowanie</a></li>
+			<li><a href="https://dzieje.pl/aktualnosci/rocznica-zlamania-szyfru-enigmy-przez-polskich-matematykow" target="_blank">Złamanie szyfrów przez Polaków</a></li>
+			<li><a href="https://fajnepodroze.pl/enigma-ciekawostki/" target="_blank">Ciekawostki</a></li>
+			</ul>
+              </div>
+    </p>
+   
+    <footer>
+        &copy; Roman Kruk, Kornel Butomski 2P</br>
+         Data utworzenia 16.05.2023
+      </footer>
+    </main>
+    </body>
+    </html>
+    

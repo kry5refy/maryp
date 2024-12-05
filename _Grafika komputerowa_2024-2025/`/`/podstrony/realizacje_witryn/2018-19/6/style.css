@@ -1,0 +1,44 @@
+#tyt{
+    font-weight: 100;
+    font-family: fantasy;
+    color: ghostwhite;
+    font-size: 15mm;
+    
+    
+    
+}
+
+#klik{
+    font-family: sans-serif;
+    color: navajowhite;
+    font-size: 5mm;
+    
+}
+
+#tekst{
+    color: white;
+    font-size: 7mm;
+	text-align: center;
+	 margin-left: 75mm;
+	  margin-right: 75mm;
+	  justify-content: center;
+	    
+    
+}
+#tekst2{
+    color: black;
+    font-size: 7mm;
+    text-align: center;
+	 margin-left: 75mm;
+	  margin-right: 75mm;
+	  justify-content: center;
+    
+}
+#tlo {
+ background-size: cover;
+}
+
+
+#logo{
+	margin-top: 30mm;
+	 text-align: center;

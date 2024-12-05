@@ -1,0 +1,93 @@
+:root {
+  --bg: #202020;
+  --a_color: #303030;
+  --a_hover_color: #353535;
+
+  --font_color: green;
+  --font_family: monospace;
+  --font_spacing: 2px;
+
+  --animation_speed: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font_color);
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--font_color);
+  letter-spacing: var(--font_spacing);
+
+  font-family: var(--font_family);
+}
+
+#app {
+  width: 80%;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#content {
+  width: 100%;
+  height: 400px;
+  /* letter-spacing: var(--font_spacing); */
+}
+
+#content h1:first-letter {
+  text-transform: capitalize;
+}
+
+#navigation a {
+  background-color: var(--a_color);
+  width: 31%;
+  padding: 1%;
+  margin: 10px;
+
+  text-decoration: none;
+  color: var(--font_color);
+  text-align: center;
+
+  transition: background-color var(--animation_speed);
+}
+
+#navigation a:hover {
+  background-color: var(--a_hover_color);
+}
+
+cursor {
+  animation: blink 0.5s infinite;
+  animation-direction: alternate-reverse;
+
+  color: white;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.sidebar {
+  width: 150px;
+  height: 400px;
+  margin-right: 10px;
+  float: left;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  padding: 10px;
+}

@@ -1,0 +1,91 @@
+body {
+	background-color: #161616;
+	text-align: center;
+	word-wrap: normal;
+	color: white;
+	font-family: "Gill Sans";
+}
+
+div {
+	border: 0.1vh solid white;
+	box-sizing: border-box;
+	font-size: 2.3vh;
+}
+
+div#Galery1, div#Galery2 {
+	border: 0;
+	float: left;
+	margin: 5vw auto;
+	height: 70vh;
+	width: 24vw;
+}
+
+div#container {
+	border: 0;
+	float: left;
+	margin: 5vw auto;
+	height: 1000%;
+	width: 50vw;
+}
+
+div#main {
+	position: fixed;
+	top: 5px;
+
+	float: left;
+	margin: 5vw auto;
+	height: 70vh;
+	width: 50vw;
+}
+
+div#header {
+	text-transform: uppercase;
+	font-size: 4vh;
+	height: 15%;
+}
+
+div#nav {
+	height: 9.5%;
+}
+div#nav a{
+	padding: 2vh;
+}
+div#nav p{
+	margin: 0;
+	margin-right: 5px;
+}
+
+div#content {
+	float: left;
+
+	height: 65%;
+	width: 70%;
+}
+
+div#sidebar {
+	float: left;
+
+	padding-top: 5vw;
+	height: 65%;
+	width: 30%;
+}
+
+div#footer {
+	height: 10.5%;
+	clear: both;
+	color: #767676;
+}
+
+iframe#glowna {
+	height:100%;
+	width:100%;
+}
+
+a {
+	color: darkorange;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 2.5vh;
+	background-color: #b33000;
+}
